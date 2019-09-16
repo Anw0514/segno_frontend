@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './containers/App';
 import * as serviceWorker from './serviceWorker';
+import '@fullcalendar/core/main.css';
+import '@fullcalendar/daygrid/main.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
