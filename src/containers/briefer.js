@@ -1,13 +1,13 @@
 import React from 'react';
-import { Responsive, Segment } from 'semantic-ui-react';
+import {Segment } from 'semantic-ui-react';
 
 class Briefer extends React.Component {
 
     render() {
         return (
-            <Responsive as={Segment} minWidth={750}>
+            <Segment>
                 This is the briefer, yall
-            </Responsive>
+            </Segment>
         );
     }
 }

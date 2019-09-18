@@ -3,15 +3,25 @@ import 'semantic-ui-css/semantic.min.css'
 import '../App.css';
 import Schedule from '../calendars/schedule.js'
 import Briefer from './briefer';
+import { Responsive, Segment } from 'semantic-ui-react';
 
 class App extends React.Component {
+
+  constructor() {
+    super()
+    this.state = {
+      selectedEvent: ""
+    }
+  }
   
   render() {
     return (
-      <div className="App">
+      <Segment.Group horizontal className="App">
         <Schedule />
-        <Briefer />
-      </div>
+        <Responsive minWidth={750}>
+          <Briefer />
+        </Responsive>
+      </Segment.Group>
     )
   }
 }

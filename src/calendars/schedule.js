@@ -14,7 +14,6 @@ class Schedule extends React.Component {
 
     render() {
         return (
-            <div>
             <FullCalendar 
                 defaultView="dayGridMonth" 
                 plugins={[DayGridPlugin]} 
@@ -40,8 +39,6 @@ class Schedule extends React.Component {
                 ]}
                 eventClick={info => this.setState({selectedEvent: info.event.extendedProps})}
                 />
-            <EventDetails details={this.state.selectedEvent} />
-            </div>
         );
     }
 }
